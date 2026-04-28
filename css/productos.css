@@ -1,11 +1,14 @@
 /* Sección productos */
- .productos {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
- } 
-    .productos h2 {
+ #productos {
+  padding: 4rem 2rem;
+   background-color: #f6c2c2;
+   max-width: 1200px;
+   margin: 0 auto;
+   
+ }
+  .productos h2 {
     text-align: center;
+  
   
   }
      .productos h3 {
@@ -28,3 +31,4 @@
   font-size: 18px;
   color: #000;
   }
+

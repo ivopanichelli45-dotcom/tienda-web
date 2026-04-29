@@ -30,3 +30,8 @@ border: none;
 color: white;
 text-decoration: none;
 }
+p.marca {
+  text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+}

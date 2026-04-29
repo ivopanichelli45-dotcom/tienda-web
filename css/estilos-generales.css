@@ -81,6 +81,25 @@ nav {
   background-color: #555;
 }
 
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+    .nav-links {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+  
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+}
 
 
 

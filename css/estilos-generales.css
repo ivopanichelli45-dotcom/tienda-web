@@ -8,9 +8,12 @@
 /* Estilo global */
 body {
    line-height: 1.6em;
+   max-width: 1200px;
 }
 header {
      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     max-width: 1200px;
+     margin: 0 auto;
 }
 
 nav {
@@ -56,7 +59,7 @@ nav {
 }
 
 #hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #fff;
 }

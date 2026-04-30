@@ -1,88 +1,114 @@
-   
-   <DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="css/estilos-generales.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/productos.css" rel="stylesheet">
     <title>Productos Destacados</title>
+</head>
+<body>
     <header>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="detalles.html">detalles</a></li>
-                <li><a href="categorias.html">categorías</a></li>
-                <li><a href="newsletter.html">newsletter</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="detalles.html">Detalles</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
     </header>
 
-   <section id="productos">
+    <section id="productos">
         <h2>Productos Destacados</h2>
-            <div class="productos-grid">
-               <div class ="productos-card">
-                  <h3>Luce un outfit fresco y versátil ideal para el día a día. </h3>
-                  <img src="imagenes/conjunto urbano.jpg" alt="Conjunto urbano">
-                  <h3>Conjunto Urbano jean basico + abrigo denim a juego</h3>
-                  <p>$29.99</p>
-                
-                  <button class="btn">Comprar Ahora</button>
-               </div>
+        <div class="productos-grid">
+            
+            <div class="product-card">
+                <img src="imagenes/conjunto urbano.jpg" alt="Conjunto urbano">
+                <div class="product-card-contenido">
+                    <h3>Conjunto Urbano jean básico + abrigo denim a juego</h3>
+                    <p class="precio">$49.500</p>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
            
-               <div class ="productos-card">
-                 <img src="imagenes/remera negra y pantalon cargo.jpg" alt="conjunto cargo">
-                   <h3>conjunto cargo Remera Básica negra</h3>
-                  <h3>pantalon cargo mostaza</h3>
-                  <p>$19.99</p>
-                  <button class="btn">Comprar Ahora</button>
-                 </div>
+            <div class="product-card">
+                <img src="imagenes/remera negra y pantalon cargo.jpg" alt="Conjunto cargo">
+                <div class="product-card-contenido">
+                    <h3>Conjunto cargo Remera Básica negra + pantalón cargo mostaza</h3>
+                    <p class="precio">$34.200</p>
+                    <button class="btn">Comprar Ahora</button>
+                </div>
+            </div>
               
-                <div class ="product-card">
-                    <img src="imagenes/remera blanca y pantalon blanco.jpg" alt="conjunto vintage">
-                    <h3>conjunto vintage Remera Vintage + pantalon corto vintage blanco</h3>
-                    <p>$34.99</p>
+            <div class="product-card">
+                <img src="imagenes/remera blanca y pantalon blanco.jpg" alt="Conjunto vintage">
+                <div class="product-card-contenido">
+                    <h3>Conjunto vintage Remera Vintage + pantalón corto vintage blanco</h3>
+                    <p class="precio">$31.000</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
+            </div>
                
-                <div class ="product-card">
-                    <img src="imagenes/conjunto Buzo pantalon chandal.jpg" alt="conjunto chandal">
-                    <h3>Remera Básica + Pantalón Chandal negro</h3>
-                    <p>$12.99</p>
+            <div class="product-card">
+                <img src="imagenes/conjunto Buzo pantalon chandal.jpg" alt="Conjunto chandal">
+                <div class="product-card-contenido">
+                    <h3>Remera Básica + Pantalón Chándal negro</h3>
+                    <p class="precio">$28.900</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
+            </div>
 
-                <div class ="product-card">
-                    <img src="imagenes/conjunto frisado Buzo pantalon.jpg" alt="conjunto frisado">
-                    <h3>Conjunto Frisado Buzo + Pantalon</h3>
-                    <p>$14.99</p>
+            <div class="product-card">
+                <img src="imagenes/conjunto frisado Buzo pantalon.jpg" alt="Conjunto frisado">
+                <div class="product-card-contenido">
+                    <h3>Conjunto Frisado Buzo + Pantalón</h3>
+                    <p class="precio">$45.000</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
+            </div>
 
-                <div class="product-card">
-                    <img src="imagenes/conjunto deportivo,camiseta,pantalones corto jean y skeakers blancos.jpg" alt="conjunto deportivo">
+            <div class="product-card">
+                <img src="imagenes/conjunto deportivo,camiseta,pantalones corto jean y skeakers blancos.jpg" alt="Conjunto deportivo">
+                <div class="product-card-contenido">
                     <h3>Conjunto Deportivo camisa verde + pantalones cortos jean</h3>
-                    <p>$24.99</p>
+                    <p class="precio">$36.400</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
-                <div class="product-card">
-                    <img src="imagenes/conjunto casuald de camisa a rayas verticales y pantalon jean blanco.jpg " alt="conjunto casual">
-                    <h3>Conjunto Casual camisa a rayas verticales + pantalon jean blanco</h3>
-                    <p>$32.99</p>
+            </div>
+
+            <div class="product-card">
+                <img src="imagenes/conjunto casuald de camisa a rayas verticales y pantalon jean blanco.jpg" alt="Conjunto casual">
+                <div class="product-card-contenido">
+                    <h3>Conjunto Casual camisa a rayas verticales + pantalón jean blanco</h3>
+                    <p class="precio">$39.800</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
-                <div class="product-card">
-                    <img src="imagenes/conjunto juvenil polo rojo, jean rasgados y zapatillas de lona roja.jpg" alt="conjunto juvenil">
-                    <h3>Conjunto juvenil polo rojo + jean rasgados y zapatillas de lona roja</h3>
-                    <p>$10.99</p>
+            </div>
+
+            <div class="product-card">
+                <img src="imagenes/conjunto juvenil polo rojo, jean rasgados y zapatillas de lona roja.jpg" alt="Conjunto juvenil">
+                <div class="product-card-contenido">
+                    <h3>Conjunto juvenil polo rojo + jean rasgados y zapatillas rojas</h3>
+                    <p class="precio">$27.500</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
-                <div class="product-card">
-                    <img src="imagenes/conjunto elegante camisa a rayas, campera + pantalon de vestir.jpg" alt="conjunto elegante">
-                    <h3>Conjunto elegante camisa a rayas + campera + pantalon de vestir</h3>
-                    <p>$45.99</p>
+            </div>
+
+            <div class="product-card">
+                <img src="imagenes/conjunto elegante camisa a rayas, campera + pantalon de vestir.jpg" alt="Conjunto elegante">
+                <div class="product-card-contenido">
+                    <h3>Conjunto elegante camisa a rayas + campera + pantalón de vestir</h3>
+                    <p class="precio">$68.900</p>
                     <button class="btn">Comprar Ahora</button>
                 </div>
- </div>
+            </div>
+
+        </div>
     </section>
-</head>
+
+    <footer>
+        <p> Productos 100% reales no fake </p>
+    </footer>
+</body>
+</html>

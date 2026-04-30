@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/detalles.css">
+
+    <title>Detalles - Conjunto Urbano</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="detalles.html" class="active">Detalles</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="producto-container">
+        <section class="producto-galeria">
+            <img src="imagenes/conjunto urbano.jpg" alt="Conjunto Urbano">
+        </section>
+
+        <section class="producto-info">
+            <h1 class="producto-titulo">Conjunto Urbano</h1>
+            <p class="producto-precio">$75.000</p>
+            <p class="producto-descripcion">
+                Este conjunto urbano combina comodidad y estilo para tu día a día. 
+                Confeccionado con materiales de alta calidad.
+            </p>
+
+            <div class="producto-opciones">
+                <div class="opcion-grupo">
+                    <label for="talles">Talle:</label>
+                    <select id="talles" name="talles">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div class="opcion-grupo">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+                </div>
+            </div>
+            <button class="boton-agregar">Agregar al Carrito</button>
+        </section>
+    </main>
+
+    <section class="otros-productos-seccion">
+        <h2 class="seccion-titulo">Otros productos que prodrian ser de tu interes</h2>
+        
+        <div class="grilla-productos">
+            <div class="tarjeta-prenda">
+                <img src="imagenes/remerablack.jpg" alt="Remera Oversize">
+                <h3>Remera Oversize Black</h3>
+                <p class="precio-secundario">$27.500</p>
+                <a href="#" class="boton-ver">Ver Detalles</a>
+            </div>
+
+            <div class="tarjeta-prenda">
+                <img src="imagenes/camperatrucker.jpg" alt="Campera de Abrigo">
+                <h3>Campera Trucker</h3>
+                <p class="precio-secundario">$32.000</p>
+                <a href="#" class="boton-ver">Ver Detalles</a>
+            </div>
+
+            <div class="tarjeta-prenda">
+                <img src="imagenes/pantalonjogger.jpg" alt="Pantalón Jogger">
+                <h3>Pantalón Jogger Beige</h3>
+                <p class="precio-secundario">$25.000</p>
+                <a href="#" class="boton-ver">Ver Detalles</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

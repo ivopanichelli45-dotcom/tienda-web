@@ -24,3 +24,89 @@ $btn-hover-color: #a2707a;
   @extend .btn;
   @extend .btn-hover;
 }
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+.margen {
+  @extend *;
+}
+.producto-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            gap: 50px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .producto-galeria {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .producto-galeria-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+
+        .producto-galeria-img:hover:hover {
+            transform: scale(1.02);
+        }
+
+        .producto-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .producto-titulo {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .producto-precio {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ff5a5f;
+            margin-bottom: 20px;
+        }
+
+        .producto-descripcion {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .producto-opciones {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+          .productos-estandar {
+          @extend .producto-container;
+          @extend .producto-galeria;
+          @extend .producto-galeria-img ;
+          @extend  .producto-galeria-img-hover ;
+          @extend .producto-info;
+          @extend .producto-titulo;
+          @extend .producto-precio;
+          @extend .producto-descripcion;
+          @extend .producto-opciones;
+        }
+
+        
+
+  
+        

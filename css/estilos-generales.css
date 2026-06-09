@@ -167,4 +167,23 @@ footer {
   #hero p {
     font-size: 1.4rem;
   }
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0400ff; 
+  color: #3700ff;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 30px; 
+  box-shadow: 0 4px 15px #e5ff0066;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a2707a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(181, 131, 141, 0.0);
+}
 }

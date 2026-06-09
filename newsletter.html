@@ -1,88 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <link rel="stylesheet" href="scss/newsletter.css" />
-  <base href="_top" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Conjuntos Prime</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-  <div class="container">
-    <header class="header-logo">
-      <div class="img-conteiner">
-        <img src="imagenes/logo.jpg" alt="Logo de la tienda" />
-      </div>
-    </header>
-    </header>
-    <main>
-      <h1>HOLA USUARIO</h1>
-      <section class="main-conteiner">
-        <p>Recuerda suscribirte a nuestra membresia donde tendrás acceso a nuevas ofertas y productos limitados antes
-          que nadie.</p>
-        <form action="#" method="post">
-          <form>
-            <label class="block">
-              <span class="nombre">Nombre y Apellido:</span>
-              <input type="text" class="peer ..." />
-              <p class="invisible peer-required:visible ...">Please provide your full name.</p>
-            </label>
-          </form>
-          <form>
-            <label class="block">
-              <span class="...">Email</span>
-              <input type="email" class="peer ..." />
-              <p class="invisible peer-required:visible ...">Please provide a valid email address.</p>
-            </label>
-          </form>
-          <form>
-            <label class="block">
-              <span class="...">Teléfono:</span>
-              <input type="tel" class="peer ..." />
-              <p class="invisible peer-invalid:visible ...">Please provide a valid phone number.</p>
-            </label>
-          </form>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
 
+    <div class="bg-white max-w-lg w-full rounded-2xl shadow-lg overflow-hidden">
+      <div class="blur-circle circle-1"></div>
+      <div class="blur-circle circle-2"></div>
+        <header class="bg-black py-6 flex justify-center">
+            <img
+                src="imagenes/logo.jpg"
+                alt="Logo de la tienda"
+                class="w-40 h-auto"
+            >
+        </header>
 
+        <!-- Contenido -->
+        <main class="p-8">
 
-          <button type="submit">Enviar </button>
+            <h1 class="text-3xl font-bold text-center mb-4">
+                ¡Hola Usuario!
+            </h1>
 
-      </section>
-      <p class="marca">Conjuntos prime 2026</p>
-      <a href="index.html">VOLVER</a>
-    </main>
-  </div>
+            <p class="text-gray-600 text-center mb-8">
+                Suscribite a nuestra newsletter y recibí ofertas exclusivas,
+                novedades y acceso anticipado a productos limitados.
+            </p>
+
+            <form action="#" method="post" class="space-y-5">
+
+                <!-- Nombre -->
+                <div>
+                    <label for="nombre" class="block font-semibold mb-2">
+                        Nombre y Apellido
+                    </label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    >
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block font-semibold mb-2">
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    >
+                </div>
+
+                <!-- Teléfono -->
+                <div>
+                    <label for="telefono" class="block font-semibold mb-2">
+                        Teléfono
+                    </label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    >
+                </div>
+
+                <!-- Provincia -->
+                <div>
+                    <label for="provincia" class="block font-semibold mb-2">
+                        Provincia
+                    </label>
+
+                    <select
+                        id="provincia"
+                        name="provincia"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    >
+                        <option value="">Seleccione una provincia</option>
+                        <option>Buenos Aires</option>
+                        <option>CABA</option>
+                        <option>Catamarca</option>
+                        <option>Chaco</option>
+                        <option>Chubut</option>
+                        <option>Córdoba</option>
+                        <option>Corrientes</option>
+                        <option>Entre Ríos</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                        <option>La Pampa</option>
+                        <option>La Rioja</option>
+                        <option>Mendoza</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>Río Negro</option>
+                        <option>Salta</option>
+                        <option>San Juan</option>
+                        <option>San Luis</option>
+                        <option>Santa Cruz</option>
+                        <option>Santa Fe</option>
+                        <option>Santiago del Estero</option>
+                        <option>Tierra del Fuego</option>
+                        <option>Tucumán</option>
+                    </select>
+                </div>
+
+                <!-- Localidad -->
+                <div>
+                    <label for="localidad" class="block font-semibold mb-2">
+                        Localidad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="localidad"
+                        name="localidad"
+                        placeholder="Ej: Rosario, Ushuaia, Mar del Plata"
+                        required
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black"
+                    >
+                </div>
+
+                <!-- Términos -->
+                <div class="flex items-start gap-3">
+                    <input
+                        type="checkbox"
+                        id="terminos"
+                        required
+                        class="mt-1 h-4 w-4"
+                    >
+
+                    <label for="terminos" class="text-sm text-gray-700">
+                        He leído y acepto los términos y condiciones y autorizo
+                        el tratamiento de mis datos para recibir comunicaciones,
+                        promociones y novedades de Conjuntos Prime.
+                    </label>
+                </div>
+
+                <!-- Botón -->
+                <button
+                    type="submit"
+                    class="w-full bg-black text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition"
+                >
+                    Suscribirme
+                </button>
+
+            </form>
+
+            <!-- Footer -->
+            <div class="mt-8 text-center">
+                <p class="font-bold text-lg">
+                    Conjuntos Prime 2026
+                </p>
+
+                <a
+                    href="index.html"
+                    class="inline-block mt-4 text-black font-semibold hover:underline"
+                >
+                    Volver al inicio
+                </a>
+            </div>
+
+        </main>
+
+    </div>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-<!-- HTML: <button>Enviar</button> 
-      
-     //MUY SIMPLE SIN DISEÑO                        -->
-
-
-<!--HTML+SASS: <button class=".comprar-btn">Enviar</button>
-  .comprar-btn {
-  @extend .btn;
-  @extend .btn-hover;
-}    
-  //CODIGO MAS LIMPIO Y MAS ESTILOS                                                 -->
-
-
-<!--"BOOTSTRAP: <button class="btn btn-primary">Enviar</button>  
-
-//MAS SIMPLE EL CODIGO, MENOS TIEMPO                      -->
-
-<!-- HTML+TAILWIND:<button class="bg-blue-500 text-white px-4 py-2 rounded">
-  Enviar
-</button>          
-
-
-//MUCHAS CLASES PERO MUY PERSONALIZABLE                      -->
